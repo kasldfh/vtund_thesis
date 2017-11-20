@@ -62,7 +62,6 @@ void * traffic_handler (void * queue_ptr) {
     printf("Queue->size is: %d\n", queue->size);
     vtun_syslog(LOG_ERR, "Queue->size is: %d\n", queue->size);
     while ( 1 ) { //this should be something more multithready
-        printf("In loop\n");
         if (queue->size) {
             printf("Queue size was: %d, queue elem was: %d\n", queue->size, queue->arr[queue->size]);
             vtun_syslog(LOG_ERR, "Queue size was: %d, queue elem was: %d\n", queue->size, queue->arr[queue->size]);
