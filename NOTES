@@ -1,0 +1,2 @@
+make sure to add -lpthread to generated makefile
+need to install all deps before building...bison, flex, libutil-freebsd-dev or something
